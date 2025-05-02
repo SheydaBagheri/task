@@ -165,7 +165,7 @@
 
 
 // }
-
+//h
 // let numbers4slice = numbers.slice(-4)
 // let number3Slice = numbers.slice()
 // let numbersStar = numbers4slice.padStart(numbers.length , '*')
