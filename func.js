@@ -848,15 +848,25 @@
 //     age : 34
 // };
 // function showuser(score){
-//     console.log(`your name is ${this.name} , your age is ${this.age} and your score is ${score} `)
-// }
+//     console.log(this)
+//     setTimeout(()=>{
 
+//         console.log(`your name is ${this.name} ,
+//             your age is ${this.age} and your score is ${score} `)
+
+
+//     },2000)
+
+// //arrow function don't need .bind
+// }
+// showuser.apply(user2, [12])
 // // showuser.call(user1 , 20)
 // // showuser.call(user2 , 14)
 // //apply in arrey
 // // showuser.apply(user1 , [20])
 // let showUs = showuser.bind(user1 , 20)
 // console.log(showUs)
+
 
 
 
