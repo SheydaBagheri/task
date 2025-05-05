@@ -867,8 +867,35 @@
 // let showUs = showuser.bind(user1 , 20)
 // console.log(showUs)
 
-//nulish
+//nullish ??
 
+// let num = NaN;
+
+// let nulishNUm = num ?? 2000
+// console.log(nulishNUm) return Nan 
+
+// but undefined and null return 2000
+
+// let num = null
+// let  nulishNUm = num ?? 2000
+// console.log(nulishNUm)
+
+
+let user = {
+    id: '1',
+    name: 'Sheyda',
+    age : 20 ,
+    adress : {
+        contry:'Iran',
+        city: 'Tehran'
+    }
+};
+
+// let usertNUll = user.id ?? user.age; //1
+let usertNUll = user.adress.city ? user.adress.city.street : undefined;
+// or
+let usersStreet = user.adress.city?.street
+console.log(usertNUll , usersStreet)
 
 
 
