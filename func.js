@@ -881,21 +881,44 @@
 // console.log(nulishNUm)
 
 
-let user = {
-    id: '1',
-    name: 'Sheyda',
-    age : 20 ,
-    adress : {
-        contry:'Iran',
-        city: 'Tehran'
-    }
-};
+// let user = {
+//     id: '1',
+//     name: 'Sheyda',
+//     age : 20 ,
+//     adress : {
+//         contry:'Iran',
+//         city: 'Tehran'
+//     }
+// };
 
 // let usertNUll = user.id ?? user.age; //1
-let usertNUll = user.adress.city ? user.adress.city.street : undefined;
+// let usertNUll = user.adress.city ? user.adress.city.street : undefined;
 // or
-let usersStreet = user.adress.city?.street
-console.log(usertNUll , usersStreet)
+// let usersStreet = user.adress.city?.street
+// console.log(usertNUll , usersStreet)
+// let user = {
+//     id: '1',
+//     name: 'Sheyda',
+//     age : 20 ,
+// };
+
+// let UserEnteries = Object.entries(user);
+
+// for (let user of UserEnteries) {
+//     console.log(`${user[0]} : ${user[1]}`)
+    
+// }
+
+let number = [1, 2 ,3 ,2 ,1 , 4 , 5 ,6 ]; //return [1, 2 ,3 ,2 ,1 , 4 , 5 ,6 ]
+let numbers = new Set([1, 2 ,3 ,2 ,1 , 4 , 5 ,6 ]); // return [1,2,3,4,5,6]
+console.log(number, numbers);
+ numbers.add(7);
+
+ for(let num of numbers){
+    console.log(num)
+ }
+ 
+
 
 
 
