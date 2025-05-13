@@ -909,23 +909,44 @@
     
 // }
 
-let number = [1, 2 ,3 ,2 ,1 , 4 , 5 ,6 ]; //return [1, 2 ,3 ,2 ,1 , 4 , 5 ,6 ]
-let numbers = new Set([1, 2 ,3 ,2 ,1 , 4 , 5 ,6 ]); // return [1,2,3,4,5,6]
-console.log(number, numbers);
- numbers.add(7);
+// let number = [1, 2 ,3 ,2 ,1 , 4 , 5 ,6 ]; //return [1, 2 ,3 ,2 ,1 , 4 , 5 ,6 ]
+// let numbers = new Set([1, 2 ,3 ,2 ,1 , 4 , 5 ,6 ]); // return [1,2,3,4,5,6]
+// console.log(number, numbers);
+//  numbers.add(7);
 
- for(let num of numbers){
-    console.log(num)
- }
+//  for(let num of numbers){
+//     console.log(num)
+//  }
+//map
+// let user = {
+//    id: 1 ,
+//    name : 'sheyda',
+//    age : 21 , 
+// }//not ittraibel
+
+// let userMap = new Map(Object.entries(user))
+// console.log(userMap);
+// console.log(user)
+// userMap.set('city' , 'tehran')
+// userMap.forEach((value , key)=>{
+//    console.log(`${key} : ${value}`)
+// });
+//proxy 
+// let user = {
+//    id: 1 ,
+//    name : 'sheyda',
+//    age : 21 , 
+// };
+// const userProxy = new Proxy(user,{
+//    get: function(target , property){
+//       // return user
+//      return property in target ? target[property] : null
+//    }
+// })
+
+// console.log(userProxy.address) //CRUD READ
  
-
-
-
-
-
-
-
-
-
-
-
+// const score = 15;
+// const userS = score<=20 && score>15 ? 'A': score<=15 && score>=10 ? 'B'
+//  : score<10 && score>0 ? 'C': 'not valid';
+// console.log(`your score is ${score} and your statue is ${userS}`)
