@@ -950,3 +950,37 @@
 // const userS = score<=20 && score>15 ? 'A': score<=15 && score>=10 ? 'B'
 //  : score<10 && score>0 ? 'C': 'not valid';
 // console.log(`your score is ${score} and your statue is ${userS}`)
+
+// Async 
+
+let book = [
+  {id: 1 , name:'Binavayan' , price:210000},
+  {id: 2 , name:'golestan' , price:260000},
+  {id: 3 , name:'bostan' , price:320000},
+];
+
+const addbook = (name , price)=>{
+   let newbook ={
+      id: book.length +1,
+      name,
+      price
+   };
+
+   return new Promise((resolve, reject)=>{
+      setTimeout(function(){
+         book.push(newbook)
+         if( book.push(newbook)){
+            resolve()
+         }else{
+            reject()
+         }
+
+
+      },3000)
+   })
+}
+addbook('ssss' , 450000).then(()=>{
+   console.log(book)
+
+})
+
