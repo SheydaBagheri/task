@@ -1,4 +1,5 @@
 //array chalenje//
+
 // calcTip = function(bills){
 
 //     if(bills>50 && bills<200){
@@ -953,34 +954,62 @@
 
 // Async 
 
-let book = [
-  {id: 1 , name:'Binavayan' , price:210000},
-  {id: 2 , name:'golestan' , price:260000},
-  {id: 3 , name:'bostan' , price:320000},
-];
+// let book = [
+//   {id: 1 , name:'Binavayan' , price:210000},
+//   {id: 2 , name:'golestan' , price:260000},
+//   {id: 3 , name:'bostan' , price:320000},
+// ];
 
-const addbook = (name , price)=>{
-   let newbook ={
-      id: book.length +1,
-      name,
-      price
-   };
+// const addbook = (name , price)=>{
+//    let newbook ={
+//       id: book.length +1,
+//       name,
+//       price
+//    };
 
-   return new Promise((resolve, reject)=>{
-      setTimeout(function(){
-         book.push(newbook)
-         if( book.push(newbook)){
-            resolve()
-         }else{
-            reject()
-         }
+//    return new Promise((resolve, reject)=>{
+//       setTimeout(function(){
+//          if(book.push(newbook)){
+//             resolve()
+//          }else{
+//             reject()
+//          }
 
 
-      },3000)
-   })
-}
-addbook('ssss' , 450000).then(()=>{
-   console.log(book)
+//       },3000)
+//    })
+// }
+// addbook('ssss' , 450000).then(()=>{
+//    console.log(book)
 
+// })
+
+
+let myPromise = new Promise((resolve, reject) => {
+   // setTimeout(()=>{
+   //     resolve('your login')
+   //     reject('your not log')
+
+   let text = 'javascript'
+   setTimeout(()=>{
+      if(text){
+         resolve(text)
+      }else{
+         reject(new Error ('not text'))
+      }
+   },2000)
 })
+
+// myPromise.then((sucsess)=> console.log(sucsess));
+// myPromise.catch((err)=> console.log(err));
+// myPromise.finally(()=> console.log('promised'))
+
+//chaining
+
+// myPromise.then(response=> response.split("i"))
+// myPromise.then(response2=> response2.reverse())
+// myPromise.then(response3=> response3.join(''))
+// myPromise.then(response4=> console.log(response4))
+// myPromise.catch(error=> console.log(error))
+
 
