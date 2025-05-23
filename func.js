@@ -985,20 +985,20 @@
 // })
 
 
-let myPromise = new Promise((resolve, reject) => {
+// let myPromise = new Promise((resolve, reject) => {
    // setTimeout(()=>{
    //     resolve('your login')
    //     reject('your not log')
 
-   let text = 'javascript'
-   setTimeout(()=>{
-      if(text){
-         resolve(text)
-      }else{
-         reject(new Error ('not text'))
-      }
-   },2000)
-})
+//    let text = 'javascript'
+//    setTimeout(()=>{
+//       if(text){
+//          resolve(text)
+//       }else{
+//          reject(new Error ('not text'))
+//       }
+//    },2000)
+// })
 
 // myPromise.then((sucsess)=> console.log(sucsess));
 // myPromise.catch((err)=> console.log(err));
@@ -1011,5 +1011,30 @@ let myPromise = new Promise((resolve, reject) => {
 // myPromise.then(response3=> response3.join(''))
 // myPromise.then(response4=> console.log(response4))
 // myPromise.catch(error=> console.log(error))
+ 
+//api
+const userElem = document.getElementById('btn');
+
+// userElem.addEventListener('click' , ()=>{
+//    fetch('https://randomuser.me/api/')
+//    .then(res=>{
+//       console.log(res)
+//       if(res.status === 200){
+//          return res.json()
+//       }return new Error('error');
+      
+
+//    }).then(data=>{
+//       console.log('your data is' , data.results[0])
+
+
+//    }).catch(err=>{
+//       console.log(err)
+//    })
+
+
+
+// })
+
 
 
