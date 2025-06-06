@@ -1012,8 +1012,8 @@
 // myPromise.then(response4=> console.log(response4))
 // myPromise.catch(error=> console.log(error))
  
-//api
-const userElem = document.getElementById('btn');
+// api
+// const userElem = document.getElementById('btn');
 
 // userElem.addEventListener('click' , ()=>{
 //    fetch('https://randomuser.me/api/')
@@ -1032,9 +1032,51 @@ const userElem = document.getElementById('btn');
 //       console.log(err)
 //    })
 
-
-
 // })
 
+// class user{
+//    constructor(userName , userAge , userEmail){
+//       this.userName = userName;
+//       this.userAge = userAge;
+//       this.userEmail = userEmail
+//       console.log(`your name ${userName} `)
+
+//    }
+//   walk=()=>{
+
+//    }
+
+
+// }
+
+class All{
+   constructor(userName, userAge , userJob){
+      this.userName = userName;
+      this.userAge = userAge;
+      this.userJob = userJob
+
+
+   }
+};
+class student extends All{
+   constructor(studentLesson , studentClass){
+      this.studentClass = studentClass
+      this.studentLesson = studentLesson
+      console.log()
+   }
+   
+};
+
+
+
+// class teacher extends All{
+
+
+// }
+
+
+
+let userSheyda = new user('sheyda' , 15 , 'shyd@gmail.com')
+let userShayan = new user('shayan' , 29 , 'shd@gmail.com')
 
 
